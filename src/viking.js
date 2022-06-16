@@ -55,6 +55,32 @@ class War {
   addSaxon(saxonObj) {
     this.saxonArmy.push(saxonObj);
   }
+  // attack(defender) {
+  //   this.defender = defender;
+  //   let attacker;
+  //   let armyA;
+  //   let armyD;
+  //   if (defender === "viking") {
+  //     armyD = this.vikingArmy;
+  //     armyA = this.saxonArmy;
+  //   } else {
+  //     armyD = this.saxonArmy;
+  //     armyA = this.vikingArmy;
+  //   }
+  //   defender = armyD[Math.floor(Math.random() * armyD.length)];
+  //   attacker = armyA[Math.floor(Math.random() * armyA.length)];
+  //   let result = defender.receiveDamage(attacker.strength);
+  //   if (defender.health <= 0) {
+  //     armyD.splice(armyD.indexOf(defender), 1);
+  //   }
+  //   return result;   
+  // }
+  // vikingAttack() {
+  //   this.attack("saxon");
+  // }
+  // saxonAttack() {
+  //   this.attack("viking");
+  // }
   vikingAttack() {
     let viking = this.vikingArmy[Math.floor(Math.random() * this.vikingArmy.length)];
     let saxon = this.saxonArmy[Math.floor(Math.random() * this.saxonArmy.length)];
